@@ -32,7 +32,7 @@ export async function runMatch(_prev: MatchResult | null, form: FormData): Promi
 
   if (res.error || !res.data?.data) {
     const err = res.error as { message?: string; error?: string } | undefined;
-    return { ok: false, error: err?.message ?? err?.error ?? `Request failed (${res.response.status}).` };
+    return { ok: false, error: err?.message ?? err?.error ?? `Request failed (${res.response?.status ?? "no response"}).` };
   }
   return { ok: true, data: res.data.data };
 }
