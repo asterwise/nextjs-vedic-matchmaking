@@ -40,4 +40,4 @@ A veto is reported separately from the score on purpose: a 30/36 match with Rajj
 
 ## Stack
 
-Next.js 16 (App Router, server actions), React 19, `asterwise` 0.2.3 (generated from the API's OpenAPI document). MIT licensed.
+Next.js 16 (App Router, server actions), React 19, the `asterwise` TypeScript SDK (generated from the API's OpenAPI document). MIT licensed.
